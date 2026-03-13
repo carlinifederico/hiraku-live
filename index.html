@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRAKU — Live Experience</title>
+    <meta name="description" content="HIRAKU is a multisensory musical visual experience in real time. By Federico Carlini and Jorge Tereso.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <span class="loader-text">HIRAKU</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#">
+            <img src="assets/img/logo.png" alt="HIRAKU" class="nav-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#show">Show</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#concept">Concept</a>
+        <a href="#show">Show</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ======================== HERO ======================== -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="assets/img/logo.png" alt="HIRAKU" class="hero-logo">
+            <p class="hero-tagline">live experience</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ======================== CONCEPT ======================== -->
+    <section class="section" id="concept">
+        <div class="concept">
+            <div class="concept-grid">
+                <div class="concept-text">
+                    <p class="section-label reveal">Concept</p>
+                    <h2 class="reveal reveal-delay-1">A multisensory musical visual experience</h2>
+                    <p class="highlight reveal reveal-delay-2">We want to keep the nature of this process free and alive, as if it were a visit to our subconscious, that deep and hidden place where images and ideas exist in their essential state.</p>
+                    <p class="reveal reveal-delay-3">Stripped of any fixed meaning, generating atmospheres that invite the viewer to immerse themselves in different emotions: introspective, trance like, and dance states.</p>
+                    <p class="highlight reveal reveal-delay-4">We combine elements of electronic and experimental music with cinematic language and abstract visuals created with artificial intelligence.</p>
+                </div>
+                <div class="concept-image reveal reveal-delay-2">
+                    <img src="assets/img/concept.png" alt="HIRAKU Visuals">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== ETYMOLOGY ======================== -->
+    <section class="etymology section">
+        <div class="etymology-content">
+            <p class="etymology-hiragana reveal">ひらく</p>
+            <h2 class="etymology-kanji reveal reveal-delay-1">開く</h2>
+            <p class="etymology-romaji reveal reveal-delay-2">hiraku</p>
+            <p class="etymology-meaning reveal reveal-delay-3">(from Japanese) It generally means "to open" or "to unfold." It is used to describe the act of opening something, such as a space or a book, or revealing something that was hidden or unknown.</p>
+        </div>
+    </section>
+
+    <!-- ======================== FORMAT / LIVE SHOW ======================== -->
+    <section class="section" id="show">
+        <div class="format">
+            <div class="format-header">
+                <p class="section-label reveal" style="justify-content:center">Format / Live Show</p>
+                <h2 class="reveal reveal-delay-1">Immersive experience</h2>
+            </div>
+            <div class="format-grid">
+                <div class="format-text">
+                    <p class="reveal">The format of <strong>HIRAKU</strong> is a live performance, an immersive experience of approximately 90 minutes composed of around six sets per concert.</p>
+                    <p class="reveal reveal-delay-1">Each of these sets can be enriched with the participation of special guests who contribute their diverse visions and talents, helping to create a collective and integral discourse that elevates the musical and visual experience to new heights.</p>
+                    <div class="format-stats reveal reveal-delay-2">
+                        <div class="stat-item">
+                            <span class="stat-number">~90</span>
+                            <span class="stat-label">Minutes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Sets</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Creators</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="format-image reveal reveal-delay-1">
+                    <img src="assets/img/liveshow.png" alt="HIRAKU Live Show">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== SETS / EXPERIENCE ======================== -->
+    <section class="section" id="experience" style="padding-left:0;padding-right:0;">
+        <div class="sets">
+            <div class="sets-header">
+                <p class="section-label reveal">The Experience</p>
+                <h2 class="reveal reveal-delay-1">Sets</h2>
+            </div>
+
+            <div class="sets-track" id="setsTrack">
+                <div class="set-card reveal">
+                    <img src="assets/img/set1.png" alt="Set 1 - El Silencio">
+                    <div class="set-card-overlay">
+                        <span class="set-number">Set 1</span>
+                        <h3 class="set-title">"El Silencio"</h3>
+                    </div>
+                </div>
+
+                <div class="set-card reveal reveal-delay-1">
+                    <img src="assets/img/set2.png" alt="Set 2">
+                    <div class="set-card-overlay">
+                        <span class="set-number">Set 2</span>
+                        <h3 class="set-title">"El árbol que muere es parte de un bosque que vive eternamente"</h3>
+                    </div>
+                </div>
+
+                <div class="set-card reveal reveal-delay-2">
+                    <img src="assets/img/set3.jpg" alt="Set 3 - Del deseo y la libertad">
+                    <div class="set-card-overlay">
+                        <span class="set-number">Set 3</span>
+                        <h3 class="set-title">"Del deseo y la libertad"</h3>
+                    </div>
+                </div>
+
+                <div class="set-card reveal reveal-delay-3">
+                    <img src="assets/img/set4.png" alt="Set 4">
+                    <div class="set-card-overlay">
+                        <span class="set-number">Set 4</span>
+                        <h3 class="set-title">"Donde habitan los reflejos, las flores en el mar"</h3>
+                    </div>
+                </div>
+
+                <div class="set-card reveal reveal-delay-4">
+                    <img src="assets/img/set5.png" alt="Set 5 - Naturis">
+                    <div class="set-card-overlay">
+                        <span class="set-number">Set 5</span>
+                        <h3 class="set-title">"Naturis"</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sets-hint">
+                <span>Drag to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== GALLERY MARQUEE ======================== -->
+    <section class="marquee-section">
+        <div class="marquee-track" id="marqueeTrack">
+            <img src="assets/img/gallery1.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery2.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery3.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery4.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery5.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery6.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery7.jpg" alt="HIRAKU Visual">
+            <img src="assets/img/gallery8.png" alt="HIRAKU Visual">
+            <!-- Duplicated for seamless loop -->
+            <img src="assets/img/gallery1.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery2.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery3.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery4.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery5.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery6.png" alt="HIRAKU Visual">
+            <img src="assets/img/gallery7.jpg" alt="HIRAKU Visual">
+            <img src="assets/img/gallery8.png" alt="HIRAKU Visual">
+        </div>
+    </section>
+
+    <!-- ======================== CREATORS ======================== -->
+    <section class="section" id="about">
+        <div class="creators">
+            <div class="creators-header">
+                <p class="section-label reveal" style="justify-content:center">The Creators</p>
+                <h2 class="reveal reveal-delay-1">About</h2>
+            </div>
+
+            <div class="creators-grid">
+                <div class="creator-card reveal">
+                    <div class="creator-photo">
+                        <img src="assets/img/federico.png" alt="Federico Carlini">
+                    </div>
+                    <h3 class="creator-name">Federico Carlini</h3>
+                    <p class="creator-role">Co-Creator</p>
+                    <p class="creator-bio">Musician, art director and visual artist based in Buenos Aires, Argentina. His profile has been shaped by the inevitable attraction between music and the visual arts, with a strong inclination toward improvisation, poetic language and abstract art. He has participated in numerous projects across multiple formats including immersive experiences, virtual reality and AR, music for orchestras, jazz, animation and film. Currently a director at 3dar studios and an independent musician.</p>
+                    <p class="creator-credits">
+                        Solo album Petricor 2023<br>
+                        Art director for Earth 2018 — Lil Dicky &amp; Leonardo DiCaprio<br>
+                        Director of Paper Birds 2021 — Edward Norton &amp; Joss Stone<br>
+                        Art director for Eggscape 2023 — Venice Immersive Award
+                    </p>
+                    <div class="creator-links">
+                        <a href="https://www.instagram.com/federicocarlini" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.imdb.com/name/nm5765498/" target="_blank" rel="noopener">IMDb</a>
+                        <a href="https://open.spotify.com/artist/3x1cTxboQDFChKE7ONPDBE" target="_blank" rel="noopener">Spotify</a>
+                    </div>
+                </div>
+
+                <div class="creator-card reveal reveal-delay-2">
+                    <div class="creator-photo">
+                        <img src="assets/img/jorge.png" alt="Jorge Tereso">
+                    </div>
+                    <h3 class="creator-name">Jorge Tereso</h3>
+                    <p class="creator-role">Co-Creator</p>
+                    <p class="creator-bio">Director and digital artist from Buenos Aires. His work ranges from playful and psychedelic animation to virtual reality experiences and interactive installations. He joined 3dar and became a partner while creating his first award winning short film Shave It. In 2014 he created Light Graffiti, presented multiple times in New York and around the world. Always searching for new ways to expand the possibilities of art and technology.</p>
+                    <p class="creator-credits">
+                        Co-director of Gloomy Eyes VR 2019 — Sundance &amp; SXSW, Annecy winner<br>
+                        Executive producer on Earth Song by Lil Dicky 2018<br>
+                        Executive producer on Paperbirds 2021<br>
+                        Creative director on Eggscape — Venice Immersive Award 2023
+                    </p>
+                    <div class="creator-links">
+                        <a href="https://www.instagram.com/jorgetereso" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://www.imdb.com/name/nm4160948/" target="_blank" rel="noopener">IMDb</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER / CONTACT ======================== -->
+    <footer class="footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <h2 class="footer-cta reveal">Let's<br>connect.</h2>
+                    <div class="footer-social reveal reveal-delay-1">
+                        <a href="https://www.instagram.com/hiraku.ig" target="_blank" rel="noopener">Instagram</a>
+                        <a href="https://soundcloud.com/hiraku" target="_blank" rel="noopener">SoundCloud</a>
+                    </div>
+                </div>
+                <div class="footer-contacts reveal reveal-delay-2">
+                    <div>
+                        <p class="footer-contact-name">Federico Carlini</p>
+                        <a href="mailto:carlini@3dar.com" class="footer-contact-email">carlini@3dar.com</a>
+                        <p class="footer-contact-phone">+54 9 11 3273 2060</p>
+                    </div>
+                    <div>
+                        <p class="footer-contact-name">Jorge Tereso</p>
+                        <a href="mailto:jorge@3dar.com" class="footer-contact-email">jorge@3dar.com</a>
+                        <p class="footer-contact-phone">+54 9 11 5957 4375</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HIRAKU Live Experience</p>
+                <p>Buenos Aires, Argentina</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
